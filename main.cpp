@@ -30,8 +30,8 @@ int main() {
         int player_athletics = std::rand() % 21 + 1;
         int player_strength = std::rand() % 21 + 1;
         character player(player_name,1 ,player_athletics,player_strength);
-        cout << player.name << " " << player.level << " "
-        << player.athletics << " " << player.strength << "\n";
+        cout << player.name << " ,level: " << player.level << " ,athletics:"
+        << player.athletics << " ,strength: " << player.strength << "\n";
     }
     else if(input == "exit"){
     }
@@ -39,7 +39,6 @@ int main() {
         cout << "Would you like to start?";
     }
     maintain.adventure_start();
-    maintain.clear_screen();
     start_of_act_I decision;
     maintain.clear_screen();
     decision.first_game_decision();

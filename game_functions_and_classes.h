@@ -38,12 +38,12 @@ public:
 
 class enemies{
 public:
-    std::string creature_name;
+    std::string name;
     int level;
     int athletics;
     int strength;
-    enemies(std::string creature_name, int level, int athletics, int strength){
-        this->creature_name = creature_name;
+    enemies(std::string name, int level, int athletics, int strength){
+        this->name = name;
         this->level = level;
         this->athletics = athletics;
         this->strength = strength;
